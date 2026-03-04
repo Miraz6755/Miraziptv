@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexPlayer Pro</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="nexplayer.css">
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+</head>
+<body style="background: #0f0f0f; margin: 0; display: flex; align-items: center; justify-content: center; height: 100vh;">
+
+    <div id="nex-player" class="nex-wrapper"></div>
+
+    <script src="nexplayer.js"></script>
+
+    <script>
+        const player = new NexPlayer({
+            selector: '#nex-player',
+            source: 'https://v5on.site/live/75374/xserver/webhop/1856.m3u8', 
+            poster: 'https://via.placeholder.com/1280x720/000000/FFFFFF/?text=NexPlayer' 
+        });
+    </script>
+
+</body>
+</html>
